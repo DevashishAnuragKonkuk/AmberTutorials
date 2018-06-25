@@ -5,7 +5,7 @@ loadamberparams frcmod.ionsjc_tip3p
 set default PBradii mbondi3
 loadamberparams lig.parmchk2.frcmod
 
-rec = loadpdb Protein.pdb
+rec = loadpdb protein.maes.pdb
 lig = loadmol2 lig.ante.mol2
 
 complex = combine {rec lig}
@@ -22,6 +22,5 @@ addions solvcomplex Na+ 0
 
 savepdb solvcomplex solvcomplex.pdb
 saveamberparm solvcomplex solvcomplex.prmtop solvcomplex.rst7
-
 
 
