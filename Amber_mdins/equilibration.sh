@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "Started Equilibration on `date` "
-do_parallel="pmemd.cuda"
+do_parallel="pmemd"
 
 prmtop="solvcomplex.prmtop"
 coords="solvcomplex"
