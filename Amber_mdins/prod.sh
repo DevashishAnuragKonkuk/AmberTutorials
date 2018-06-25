@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "Started Production on `date` "
 #do_parallel="mpirun pmemd.MPI"
-do_cuda="mpirun pmemd.MPI"
+do_cuda="mpirun -n 24 pmemd"
 
 prmtop="solvcomplex.prmtop"
 coords="09.equil"
