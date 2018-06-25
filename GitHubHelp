@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "message"
+git config --global user.email <<EmailID>>
+git remote add origin https://github.com/DevashishAnuragKonkuk/AmberTutorials.git
+git push -u origin master
