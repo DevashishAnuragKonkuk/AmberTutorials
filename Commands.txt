@@ -1,3 +1,3 @@
-antechamber -i JZ4.mol2 -fi mol2 -o lig.ante.mol2 -fo mol2 -at gaff -c bcc -rn JZ4 -nc 0
+antechamber -i JZ4.maes.mol2 -fi mol2 -o lig.ante.mol2 -fo mol2 -at gaff -c bcc -rn JZ4 -nc 0
 parmchk2 -i lig.ante.mol2 -f mol2 -o lig.parmchk2.frcmod
 
