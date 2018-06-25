@@ -1,0 +1,27 @@
+source leaprc.protein.ff14SB
+source leaprc.gaff
+source leaprc.water.tip3p
+loadamberparams frcmod.ionsjc_tip3p
+set default PBradii mbondi3
+loadamberparams lig.parmchk2.frcmod
+
+rec = loadpdb Protein.pdb
+lig = loadmol2 lig.ante.mol2
+
+complex = combine {rec lig}
+
+savepdb complex gascomplex.pdb
+saveamberparm complex gascomplex.prmtop gascomplex.rs7
+
+
+
+solvcomplex= combine {rec lig}
+solvateoct solvcomplex TIP3PBOX 12.0
+addions solvcomplex Cl- 0
+addions solvcomplex Na+ 0
+
+savepdb solvcomplex solvcomplex.pdb
+saveamberparm solvcomplex solvcomplex.prmtop solvcomplex.rst7
+
+
+
