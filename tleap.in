@@ -22,5 +22,5 @@ addions solvcomplex Na+ 0
 
 savepdb solvcomplex solvcomplex.pdb
 saveamberparm solvcomplex solvcomplex.prmtop solvcomplex.rst7
-
+quit
 
